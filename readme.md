@@ -1,5 +1,9 @@
 > Get a random GitHub issue for an organisation
 
+[![Build Status](https://travis-ci.org/wayneashleyberry/random-issue.svg?branch=master)](https://travis-ci.org/wayneashleyberry/random-issue)
+[![dependencies Status](https://david-dm.org/wayneashleyberry/random-issue/status.svg)](https://david-dm.org/wayneashleyberry/random-issue)
+[![npm version](https://badge.fury.io/js/random-issue.svg)](https://badge.fury.io/js/random-issue)
+
 ### Installation
 
 ```sh
