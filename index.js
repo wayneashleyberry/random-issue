@@ -132,7 +132,7 @@ const randomIssue = async (token, org) => {
   return new Promise((resolve, reject) => {
     async.eachLimit(
       repos,
-      3,
+      10,
       (repo, done) => {
         if (!repo.name) {
           done();
