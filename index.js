@@ -118,7 +118,7 @@ const getRepos = async (token, owner) => {
   return Promise.resolve(results);
 };
 
-const getRandomIssue = async (token, org) => {
+const randomIssue = async (token, org) => {
   let repos;
   let issues = [];
 
@@ -160,11 +160,4 @@ const getRandomIssue = async (token, org) => {
   });
 };
 
-const main = async () => {
-  const issue = await getRandomIssue(token, org);
-  console.log(JSON.stringify(issue));
-};
-
-main();
-
-module.exports = { parseLinkHeader };
+module.exports = { randomIssue, parseLinkHeader };
