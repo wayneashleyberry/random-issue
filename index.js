@@ -39,6 +39,11 @@ const getIssues = async (token, owner, repo) => {
   let results = [];
   let end = false;
 
+  const headers = {};
+  if (token) {
+    headers.Authorization = "token " + token;
+  }
+
   while (end === false) {
     try {
       const response = await got(
@@ -50,9 +55,7 @@ const getIssues = async (token, owner, repo) => {
         ].join("/"),
         {
           json: true,
-          headers: {
-            Authorization: "token " + token
-          }
+          headers
         }
       );
 
