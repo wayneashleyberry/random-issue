@@ -2,9 +2,6 @@ const got = require("got");
 const async = require("async");
 const _ = require("lodash");
 
-const token = process.env.GITHUB_TOKEN;
-const org = process.env.GITHUB_ORG;
-
 const parseLinkHeader = input => {
   const parts = input.split(",");
   let next = "";
