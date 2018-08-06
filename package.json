@@ -3,11 +3,20 @@
   "version": "1.0.2",
   "description": "",
   "main": "index.js",
+  "keywords": ["github", "issue", "issues", "random"],
+  "homepage": "https://github.com/wayneashleyberry/random-issue",
+  "bugs": {
+    "url": "https://github.com/wayneashleyberry/random-issue/issues"
+  },
   "scripts": {
     "test": "ava"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Wayne Ashley Berry",
+    "url": "https://wayne.cloud"
+  },
+  "engines": { "node": ">=8.0.0" },
+  "license": "MIT",
   "dependencies": {
     "async": "^2.6.1",
     "ava": "^0.25.0",
